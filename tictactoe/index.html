@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading screen -->
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Game content -->
+    <div id="game-content" class="hidden">
+        <h1>Tic-Tac-Toe</h1>
+        
+        <!-- Game mode selector -->
+        <div class="game-mode">
+            <label for="game-mode-select">Game Mode:</label>
+            <select id="game-mode-select">
+                <option value="single">Single Player (vs AI)</option>
+                <option value="two-player">Two Player</option>
+            </select>
+        </div>
+
+        <!-- Scoreboard -->
+        <div class="game">
+            <div class="scoreboard">
+                <p>Player 1: <span id="player1-score">0</span></p>
+                <p id="player2-score-label">Player 2: <span id="player2-score">0</span></p>
+                <p id="ai-score-label" class="hidden">AI: <span id="ai-score">0</span></p>
+            </div>
+
+            <!-- Game Board -->
+            <div id="board" class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <button id="new-game">New Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
